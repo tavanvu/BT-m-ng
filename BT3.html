@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="inputnumber">
+<input type="button" onclick="kaka()" value="tìm">
+<script>
+    function kaka() {
+        let num = document.getElementById("inputnumber").value
+        let numbers = num.split(',');
+        let max = +numbers[0];
+        let sum = 0
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] > max)
+                max = +numbers[i]
+            sum += +numbers[i]
+        }
+        document.writeln("lớn nhât" + max + "vị trí là" + sum)
+
+    }
+</script>
+</body>
+</html>

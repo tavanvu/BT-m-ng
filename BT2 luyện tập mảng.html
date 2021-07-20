@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="haha">
+<input type="button" onclick="hihi()" value="tính">
+<script>
+    number = document.getElementById("haha").value
+    function hihi(){
+    let numbers = [];
+    let max = numbers[0];
+    let index = 0
+    for ( let i =0;i<numbers.length;i++){
+        if (numbers[i]>max)
+        max = numbers[i]
+        index = i
+    }
+        document.writeln("lớn nhât"+max + "vị trí là" +index)
+    }
+
+</script>
+</body>
+</html>
